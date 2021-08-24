@@ -95,7 +95,8 @@ html{
     margin: auto;
     
 }
-#contact h4{
+
+#contact h3, h4{
     color: mediumblue;
     text-decoration-line: underline;
     text-decoration-style: dashed;
