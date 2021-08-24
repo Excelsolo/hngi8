@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     background: #fdfff5;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ html{
     background-position: center center;
     height: 50%;
 }
-.intro h3{
+.intro p{
     font-family: 'Courier New', Courier, monospace;
     background-color: transparent;
     font-weight: bolder;
@@ -51,15 +51,58 @@ html{
     border: 1px solid #ddd;
     padding: 30px 20px;
     margin-bottom: 15px;
+    background-image: linear-gradient(#fff7e6, #ccccff);
 }
-.service h2{
+.service h3{
     margin: 15px 0;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    color: mediumblue;
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 50%;
+    text-decoration-skip: ink;
+    text-decoration-color: goldenrod;
+    padding-bottom: 15px;
 }
+.service p{
+    background-color: transparent;
+}
+
+.ping .fas{
+    font-size: 1.06rem;
+    background: #796c6c;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.ping .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.ping .phone{
+    margin: 10px 0;
+}
+
 #contact {
     margin: auto;
+    
+}
+#contact h4{
+    color: mediumblue;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 20%;
+    text-decoration-skip: ink;
+    text-decoration-color: goldenrod;
+    padding-bottom: 15px;
 }
 #contact form .msg{
     font-size:1.06rem;

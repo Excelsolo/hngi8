@@ -35,6 +35,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
          crossorigin="anonymous">
+         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="app.css">
     
     <title>Resume</title>
@@ -46,9 +47,9 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
         <img src="./resources/i4g.png" alt="" class = "d-inline-block" width ="150">
-        Grandpa</a>
+        </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <h2 class="navbar-toggler-icon"></h2>
+      <h3 class="navbar-toggler-icon"></h3>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav ">
@@ -65,30 +66,33 @@
     </div>
   </div>
 </nav>
-<div class="intro" >
+<div class="intro container mx-auto" >
     <div class="avatar">        
         <img src="./resources/avatar.jpg" alt="" >
     </div>
-    <h3 id="demo"></h3>
+    <p id="demo"></h3>
+</div>
+<div id="about container">
+
 </div>
 <div id="Skills">
     <div class="container">
         <div class="row">
             <div class="col-12 service">
-                <h2>Skills</h2>
+                <h3>Skills</h3>
             </div>
             <div class="col-sm-12 col-lg-4 service">
-                <h2>HTML</h2>
+                <h3>HTML</h3>
                 <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. 
                     It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
             </div>
             <div class="col-sm-12 col-lg-4 service">
-            <h2>CSS</h2>
+            <h3>CSS</h3>
             <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. 
                 CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
             </div>
             <div class="col-sm-12 col-lg-4 service">
-            <h2>PHP</h2>
+            <h3>PHP</h3>
                 <p>PHP is a popular general-purpose scripting language that is especially suited to web development.</p>
                 <P>Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</P>
             </div>
@@ -100,10 +104,31 @@
     
 <div class="container">
     <div class="row">
-        <h2>Contact Us</h2>
-    <form action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"
+        <h3>Contact Us</h3>
+        <div class="col-lg-6 ping">
+          <h4>Address</h4>
+        <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Isoko Airline International</span>
+
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+234-9054612690</span>
+                        
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">osajiemeka25@gmail.com</span>
+                        
+                    </div>
+                
+        </div>
+        <div class="col-lg-6">
+          <h4>Message Us</h4>
+        <form action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"
             method="post">
-        <div class="col-sm-8 col-7 text">
+        <div class="text">
         <label for="name">
             Name
         </label>
@@ -117,12 +142,14 @@
         </div>
         <div class="col-sm-8 col-7 msg">
         <label for="msg">Message</label>
-        <textarea name="msg" id="" cols="20" rows="5"></textarea>
+        <textarea name="msg" id="" cols="15" rows="3"></textarea>
         </div class ="btn">
         <div>
             <button type="submit" value="submit"> Contact Us</button>
         </div>
     </form>
+        </div>
+    
     </div>
     <br>
 </div>
